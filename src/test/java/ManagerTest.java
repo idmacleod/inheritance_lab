@@ -48,4 +48,16 @@ public class ManagerTest {
         manager.raiseSalary(-1000.00);
         assertEquals(100000.00, manager.getSalary(), 0.01);
     }
+
+    @Test
+    public void canChangeName() {
+        manager.setName("Rob");
+        assertEquals("Rob", manager.getName());
+    }
+
+    @Test
+    public void cannotChangeNameToEmptyString() {
+        manager.setName("");
+        assertEquals("Bob", manager.getName());
+    }
 }

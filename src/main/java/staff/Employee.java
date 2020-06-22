@@ -12,15 +12,15 @@ public abstract class Employee {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public String getNi() {
-        return ni;
+        return this.ni;
     }
 
     public double getSalary() {
-        return salary;
+        return this.salary;
     }
 
     public void raiseSalary(double raise) {
@@ -33,7 +33,7 @@ public abstract class Employee {
         return this.salary * 0.01;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         if (name != "") {
             this.name = name;
         }
